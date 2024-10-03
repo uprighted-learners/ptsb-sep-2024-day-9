@@ -37,3 +37,21 @@ if (age >= 1 && age < 20) {
 } else {
     console.log('You are a newborn!');
 }
+
+// use OR conditional
+let isStudent = false;
+let isTeacher = false;
+
+if (isStudent || isTeacher) {
+    console.log('You are a student or a teacher');
+} else {
+    console.log('You are not a student or a teacher');
+}
+
+// ternary operator
+let isMessage = false;
+
+// SYNTAX: condition ? expression_if_true : expression_if_false; 
+let message = isMessage ? "YES there is a message it is true!" : "NO there is no message it is false!";
+
+console.log(message);

@@ -22,3 +22,18 @@ console.log(isGreaterThan);
 if (isGreaterThan) {
     console.log("a is greater than b");
 }
+
+// chaining else if statements
+let age = 0;
+
+if (age >= 1 && age < 20) {
+    console.log('You are a kid');
+} else if (age >= 20 && age < 60) {
+    console.log('You are an adult');
+} else if (age >= 60 && age < 100) {
+    console.log('You are a senior');
+} else if (age >= 100) {
+    console.log('You are a centenarian');
+} else {
+    console.log('You are a newborn!');
+}

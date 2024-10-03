@@ -27,7 +27,14 @@ if (isGreaterThan) {
 let age = 0;
 
 if (age >= 1 && age < 20) {
-    console.log('You are a kid');
+    if (age >= 1 && age < 10) {
+        console.log('You are a child');
+    } else if (age >= 10 && age < 18) {
+        console.log('You are a teenager');
+
+    } else {
+        console.log('You are nearly an adult')
+    }
 } else if (age >= 20 && age < 60) {
     console.log('You are an adult');
 } else if (age >= 60 && age < 100) {

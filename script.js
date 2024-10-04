@@ -56,9 +56,85 @@ if (isStudent || isTeacher) {
 }
 
 // ternary operator
-let isMessage = false;
+let isMessage = true;
 
 // SYNTAX: condition ? expression_if_true : expression_if_false; 
 let message = isMessage ? "YES there is a message it is true!" : "NO there is no message it is false!";
 
 console.log(message);
+
+// binary expression
+if (0) {
+    console.log("This won't run.");
+}
+
+// truthy falsy expression
+if ("") {
+    console.log("IT RUNS, pa")
+} else {
+    console.log("IT DON'T RUN, pa")
+}
+
+// with nullish statement
+if (null) {
+    console.log("IT RUNS, ma")
+} else {
+    console.log("IT DON'T RUN, ma")
+}
+
+// with variable declarations
+let myVariable;
+
+if (myVariable) {
+    console.log("I guess it is TRUE!")
+} else {
+    console.log("I guess it is FALSE!")
+}
+
+// with an unnamed function
+if (function () { }) {
+    console.log("it is TRUE!")
+} else {
+    console.log("it is FALSE!")
+}
+
+// with an empty object
+if ({}) {
+    console.log("EMPTY OBJECT it is TRUE!")
+} else {
+    console.log("EMPTY OBJECT it is FALSE!")
+}
+
+// with an empty array
+if ([]) {
+    console.log("EMPTY ARRAY it is TRUE!")
+} else {
+    console.log("EMPTY ARRAY it is FALSE!")
+}
+
+// with a number
+console.log("0" == 0) // true
+console.log("0" === 0) // false
+console.log(654 === 654) // true
+
+// with a false comparison
+console.log(false == 0) // true
+console.log(false === 0) // false
+
+// with undefined and null
+console.log(undefined == null) // true
+console.log(undefined === null) // false
+
+// with a false object
+console.log({} == true) // false
+if ({}) {
+    console.log("GO GO GO ")
+}
+
+// with a false object
+let booleanObject = new Boolean(false);
+console.log(booleanObject)
+
+if (booleanObject) {
+    console.log("booleanObject evaluates as truthy")
+}
